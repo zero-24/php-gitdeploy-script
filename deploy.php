@@ -256,7 +256,7 @@ foreach ($commands as $command)
 
 		if (TELEGRAM_BOT_TOKEN && TELEGRAM_BOT_CHATID)
 		{
-			$params= [
+			$params = [
 				'chat_id' => TELEGRAM_BOT_CHATID,
 				'text' => $betreff . '/n/n' . $nachricht,
 				'disable_web_page_preview' => 'true',
@@ -269,6 +269,7 @@ foreach ($commands as $command)
 			curl_setopt($ch, CURLOPT_POST, 1);
 			curl_setopt($ch, CURLOPT_POSTFIELDS, ($params));
 			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+
 			$result = curl_exec($ch);
 			curl_close($ch);
 		}
