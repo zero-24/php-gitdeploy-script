@@ -160,3 +160,19 @@ define('EMAIL_ON_ERROR', false);
  * @var string A single email address e.g. 'someone@example.com'
  */
 define('EMAIL_ON_ERROR_SENDER', false);
+
+/**
+ * OPTIONAL
+ * The Telegram Bot Token to send the message from
+ *
+ * @var string The bot token as requested by the https://telegram.me/BotFather / https://gist.github.com/nafiesl/4ad622f344cd1dc3bb1ecbe468ff9f8a
+ */
+define('TELEGRAM_BOT_TOKEN', false);
+
+/**
+ * OPTIONAL
+ * The Telegram Bot CHATID to send the message to
+ *
+ * @var string The chatID from the chat with the telegram bot: https://gist.github.com/nafiesl/4ad622f344cd1dc3bb1ecbe468ff9f8a
+ */
+define('TELEGRAM_BOT_CHATID', false);
